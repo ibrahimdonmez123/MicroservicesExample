@@ -1,0 +1,17 @@
+﻿@model List<Microservices.Students.Student>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Öğrenci Listesi</title>
+</head>
+<body>
+    <h2>Öğrenci Listesi</h2>
+    <ul>
+        @foreach (var student in Model)
+        {
+            <li>@student.Name</li>
+        }
+    </ul>
+</body>
+</html>
